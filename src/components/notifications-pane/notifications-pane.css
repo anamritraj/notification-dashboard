@@ -1,0 +1,5 @@
+div.NotificationsPane {
+  position: absolute !important;
+  right: 10%;
+  max-width: 300px;
+}
