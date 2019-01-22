@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./header.css";
 export default function Header(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -22,9 +22,11 @@ export default function Header(props) {
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/" onClick={props.bellClicked}>
                 <i className="fa fa-bell" />
-                {props.notificationsCount}
+                <span className="badge badge-danger">
+                  {props.notificationsCount}
+                </span>
               </a>
             </li>
           </ul>

@@ -3,3 +3,26 @@ div.NotificationsPane {
   right: 10%;
   max-width: 300px;
 }
+li.NotificationElement .notif-title {
+  text-align: left;
+}
+li.NotificationElement.is-unread {
+  background: #f8f8f8;
+}
+
+li.NotificationElement p {
+  font-size: 11px;
+  text-align: left;
+  user-select: none;
+  margin: 5px 0;
+}
+
+li.NotificationElement .ts {
+  float: left;
+  color: #757373;
+}
+li.NotificationElement .mark-read {
+  float: right;
+  font-size: 11px;
+  color: #757373;
+}
